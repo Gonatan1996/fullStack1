@@ -1,0 +1,175 @@
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    /* border: 2px solid red; */
+    background: rgb(247, 232, 204);
+    direction: rtl;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container_fluid {
+    width: 100%;
+    min-height: 100px;
+}
+
+header {
+    position: sticky;
+    z-index: 1;
+    top: 0px;
+    height: 60px;
+    /* width: 100%; */
+    background: black;
+    direction: rtl;
+}
+
+.container {
+    margin: 0 auto;
+}
+
+header.container {
+    margin: 0 auto;
+    position: relative;
+}
+
+.menuToggle {
+    display: none;
+}
+
+.hamburger {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 30px;
+    display: block;
+    color: white;
+}
+
+.header_nav {
+    display: none;
+    width: 100%;
+    background: #EECF8F;
+    position: absolute;
+    top: 35px;
+    right: 0;
+    text-align: right;
+    padding-right: 20px;
+}
+
+.menuToggle:checked+.hamburger+.header_nav {
+    display: block;
+}
+
+.header_nav li {
+    padding: 10px 0;
+}
+
+.header_nav li a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+}
+
+.form {
+    margin-top: 0px;
+    flex-direction: column;
+}
+
+.border_form {
+    border-radius: 15px;
+    margin: 3px;
+    padding: 3px;
+}
+
+footer h2 {
+    padding: 0 8px;
+}
+
+header li {
+    padding: 2px 25px;
+    list-style-type: none;
+}
+
+main {
+    min-height: 585px;
+}
+
+footer .container_fluid {
+    color: white;
+    width: 100%;
+    height: 200px;
+    background: black;
+}
+
+.container h2 {
+    text-align: center;
+}
+
+button {
+    background: #EECF8F;
+}
+
+
+@media screen and (min-width: 768px) {
+
+    .hamburger {
+        display: none;
+    }
+
+    .header_nav {
+        background-color: black;
+        top: -10px;
+        display: flex;
+    }
+
+    header a {}
+
+    .header_nav li {
+        padding: 10px 20px;
+    }
+
+    .header_nav li a {
+        color: white;
+
+    }
+    .header_nav li:hover{
+        transition: 200ms;
+        transform: scale(1.1);
+    } 
+
+    .lihover:hover {
+        transform: scale(1.0.5);
+        font-weight: bold;
+    }
+
+    main {
+        min-height: 670px;
+    }
+
+    .form {
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .border_form {
+        width: 250px;
+        height: 40px;
+        border-radius: 15px;
+    }
+
+    button:hover {
+        transform: scale(1.1)
+    }
+
+}

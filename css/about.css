@@ -1,0 +1,46 @@
+main .container{
+    min-height: 585px;
+    padding: 8px;
+ }
+ p{
+     font-weight: bold;
+    }
+    
+     .gallery{
+         flex-wrap: wrap;
+         padding: 30px; 
+     }
+     
+      h1{
+          font-size: 40px;
+      }
+      img{
+         max-width: 100px;
+          margin: 10px;
+      }
+
+
+
+
+
+@media screen and (min-width: 768px) {
+    main .container{
+        height: 665px;
+        width: 50%;
+    }
+    .gallery{
+        gap: 70px;
+        padding: 60px; 
+    }
+    p{
+        font-size: 30px;
+    }
+    img{
+        min-width: 200px;
+    }
+    img:hover{
+        transition: 200ms;
+        transform: scale(1.3);
+    }
+}
+

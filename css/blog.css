@@ -1,0 +1,31 @@
+h1{
+    text-align: center;
+    margin-top: 10px;
+}
+.carousel{
+    flex-direction: column;
+    /* border: 2px solid red; */
+}
+.carousel-item{
+    padding: 8px;
+}
+
+@media screen and (min-width: 768px) {
+    h1{
+        text-align: center;   
+        padding:20px;
+    }
+    .carousel{
+        flex-direction: row;
+        /* border: 2px solid red; */
+    }
+    .carousel-item{
+        min-width: 30%;
+        height: 100px;
+        z-index: 1;
+        /* border: 2px solid rgb(229, 20, 55); */
+        margin: 30px;
+    }
+    
+     
+}

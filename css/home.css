@@ -1,0 +1,66 @@
+main .container_fluid_1{
+    /* border: 2px solid red; */
+    background-image: url(../images/head_image.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: 400px;
+    position: relative;
+}
+.head{
+    border-radius: 15px;
+    background: #eece8fa4;
+}
+.head h1{
+    margin: 0;
+    padding: 8px;
+    color: white;
+    font-size: 60px;
+}
+main{
+    height: 1200px;
+}
+.foot{
+    flex-wrap: wrap;
+    width: 1200px;
+    height: 300px;
+    /* border: 2px solid red; */
+}
+.box{
+    margin-top: 20px;
+    width: 80%;
+    height: 80%;
+}
+
+img{
+    width: 100%;
+}
+.box > .p {
+    height: 10%;
+    color: white;
+    background: black;
+    
+}
+@media screen and (min-width: 768px) {
+    .head{
+        width: 650px;
+        position: absolute;
+        top: 50px;
+        right: 10px;
+    } 
+    main{
+        height: 720px;
+    }
+    .foot{
+        justify-content: space-between;    
+    }
+    .box{
+        width: 30%;
+        height: 90%;
+    }
+    .box:hover{
+        transition: 200ms;
+        transform: scale(1.1);
+    }
+
+}
+
